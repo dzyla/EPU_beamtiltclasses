@@ -10,3 +10,6 @@ and used in the Ctfrefine job which will recognise detected classes
 Check if your EPU collected files have a name similar to:
 
 FoilHole_30971252_Data_**30970979**_30970980_20181130_1720-32039.mrc **(beam tilt class)**
+
+
+![alttext](https://github.com/dzyla/EPU_beamtiltclasses/blob/master/btc_EPU.jpg)
