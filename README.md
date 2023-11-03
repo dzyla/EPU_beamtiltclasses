@@ -33,5 +33,10 @@ Color from the 3rd number in the EPU
 ![beatilt_class](https://github.com/dzyla/EPU_beamtiltclasses/assets/20625527/099c368c-6eae-42ef-a4b8-4c347994b6f9)
 
 
+cryoSPARC support:
+
+![image](https://github.com/dzyla/EPU_beamtiltclasses/assets/20625527/23afae71-e2d1-42f7-95f7-489704cfb141)
+
+
 # Author:
 Dawid Zyla, La Jolla Institute for Immunology
