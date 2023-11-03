@@ -1,15 +1,31 @@
 # EPU beam tilt classes
-Very simple script (Python 3+) for EPU users who would like to add beam tilt classes to the Refine3D star file
+A simple (updated) script that uses the third position in the EPU micrograph file name (e.g., FoilHole_10218182_Data_10216707_**10216709**_20231010_225333_fractions.tiff) for beam tilt class. The script updates the optics part of the Relion 3+ data star file and saves a new modified star. Whether this modification affects the resolution is yet to be determined.
 
-### Script written by Dawid Zyla, ETH Zurich
+# Requirements
+* Python
+* Particle star file
+* EPU recorded micrographs that have the original name
 
-This script can be used by the EPU users who didn't change names of mrc (mrcs) files. Script adds the particle beam tilt classes into
-the Refine3D run_data.star file extracted from the EPU recorded mrc file names. The newly generated file can be imported with Relion 
-and used in the Ctfrefine job that should recognise detected classes
+# Included: 
+Python script and Jupyter Notebook.
 
-Check if your EPU collected files have a name similar to:
+# Not tested:
+* Initial multiple optic groups
+* ?
 
-FoilHole_30971252_Data_**30970979**_30970980_20181130_1720-32039.mrc **(beam tilt class)**
+# Usage: 
+`python find_beamtilt_classes.py --i /mnt/gpu_scratch/Extract/job027/particles.star --o /mnt/gpu_scratch/Extract/job027/particles_beamtilt.star`
+
+# Requirements:
+`pip install pandas gemmi numpy`
+
+# Proof-of-Principle
+X and Y values obtained from XML files
+
+Color from the 3rd number in the EPU
+
+![beatilt_class](https://github.com/dzyla/EPU_beamtiltclasses/assets/20625527/099c368c-6eae-42ef-a4b8-4c347994b6f9)
 
 
-![alttext](https://github.com/dzyla/EPU_beamtiltclasses/blob/master/btc_EPU.jpg)
+# Author:
+Dawid Zyla, La Jolla Institute for Immunology
