@@ -5,6 +5,7 @@ A simple (updated) script that uses the third position in the EPU micrograph fil
 * Python
 * Particle star file
 * EPU recorded micrographs that have the original name
+* In case for cryoSPARC, write access to the directory
 
 # Included: 
 Python script and Jupyter Notebook.
@@ -14,7 +15,12 @@ Python script and Jupyter Notebook.
 * ?
 
 # Usage: 
+Relion 3+:
 `python find_beamtilt_classes.py --i /mnt/gpu_scratch/Extract/job027/particles.star --o /mnt/gpu_scratch/Extract/job027/particles_beamtilt.star`
+
+cryoSPARC:
+`python find_beamtilt_classes_cs.py --i /mnt/hdd/CS-project/J835/J835_005_particles.cs`
+cryoSPARC version of this script replaces the cs file indicated and creates a backup. This does not require anything extra from the GUI; just run Global CTF and enjoy!
 
 # Requirements:
 `pip install pandas gemmi numpy`
